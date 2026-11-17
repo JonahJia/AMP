@@ -1,0 +1,73 @@
+model:
+  base_architecture: resnet50
+  pretrained: true
+  img_size: 448
+  num_classes: 200
+  prototype_dim: 128
+  subspace_dim: 10
+  active_threshold: 1.0e-6
+  explain_threshold: 1.0e-4
+  add_on_layers_type: regular
+  eps: 1.0e-6
+
+data:
+  data_root: ./datasets/cub200
+  train_dir: train
+  test_dir: test
+  train_push_dir: train
+  train_batch_size: 32
+  test_batch_size: 32
+  train_push_batch_size: 32
+  num_workers: 4
+  pin_memory: true
+  crop_to_bbox: false
+  bbox_file: null
+  mask_root: null
+  part_annotations_file: null
+  return_paths: true
+
+optimizer:
+  euclidean_optimizer: sgd
+  backbone_lr: 0.001
+  add_on_lr: 0.001
+  momentum: 0.9
+  weight_decay: 0.0001
+  basis_lr: 0.005
+  capacity_lr: 0.005
+  scheduler: cosine
+  min_lr: 1.0e-5
+  step_size: 30
+  gamma: 0.1
+  freeze_backbone_epochs: 0
+  max_grad_norm: null
+
+loss:
+  gamma_sem: 0.01
+  gamma_overlap: 0.01
+  lambda_sparse: 0.0001
+
+training:
+  num_epochs: 100
+  eval_every: 1
+  save_every: 5
+  log_every: 20
+  save_threshold: 0.0
+  deterministic: true
+  build_cache_on_fit_end: true
+
+retrieval:
+  top_m: 5
+  cache_filename: exemplar_cache.pt
+  percentile: 95
+
+evaluation:
+  dauc_steps: 20
+  perturb_sigma: 0.2
+  consistency_threshold: 0.8
+  grid_size: 3
+  correct_only: true
+  deletion_batch_size: 8
+
+experiment_name: default
+seed: 42
+device: cuda
