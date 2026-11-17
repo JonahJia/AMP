@@ -1,6 +1,6 @@
 <div align="center">
 
-![AMP](https://capsule-render.vercel.app/api?type=waving&height=200&color=0:D22229,100:2B4FA3&text=This%20Looks%20Distinctly%20Like%20That:%20Grounding%20Interpretable%20Recognition-nl-in%20Stiefel%20Geometry%20Against%20Neural%20Collapse&reversal=false&fontSize=28&fontAlignY=28&desc=Junhao%20Jia,%20Jiaqi%20Wang,%20Yunyou%20Liu,%20Haodong%20Jing,%20Yueyi%20Wu,%20Xian%20Wu,%20Yefeng%20Zheng&descSize=12&descAlignY=55&fontColor=FFFFFF)
+![AMP](https://capsule-render.vercel.app/api?type=waving&height=200&color=0:D22229,100:2B4FA3&text=This%20Looks%20Distinctly%20Like%20That:%20Grounding%20Interpretable-nl-Recognition%20in%20Stiefel%20Geometry%20Against%20Neural%20Collapse&reversal=false&fontSize=28&fontAlignY=28&desc=Junhao%20Jia,%20Jiaqi%20Wang,%20Yunyou%20Liu,%20Haodong%20Jing,%20Yueyi%20Wu,%20Xian%20Wu,%20Yefeng%20Zheng&descSize=12&descAlignY=55&fontColor=FFFFFF)
 
 [![Paper: ECCV 2026](https://img.shields.io/badge/Paper-ECCV_2026-red.svg)](https://link.springer.com/chapter/10.1007/978-3-032-37321-2_17)
 
