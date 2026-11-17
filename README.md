@@ -143,12 +143,6 @@ python train.py \
 
 `--resume` loads model weights only; it does not restore the optimizer, scheduler or epoch counter. Add `--no-cache` to skip exemplar retrieval at the end of training.
 
-A small synthetic CPU smoke test is provided and does not require dataset downloads or pretrained weights:
-
-```bash
-python tests/test_smoke.py
-```
-
 ## 🗃️ Checkpoints
 
 Pretrained AMP checkpoints are **not included** in this release. Training creates checkpoints under `runs/<backbone>/<experiment_name>/`. For the CUB configuration, the main outputs are:
