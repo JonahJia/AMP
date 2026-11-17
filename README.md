@@ -183,3 +183,18 @@ Each image produces an explanation panel with class scores, an aggregate heatmap
 ## 📄 License
 
 No license file is included in this release.
+
+## 📚 Citation
+
+If you find this work useful in your research, please cite:
+
+```bibtex
+@inproceedings{jia2026looks,
+  title={This looks distinctly like that: Grounding interpretable recognition in stiefel geometry against neural collapse},
+  author={Jia, Junhao and Wang, Jiaqi and Liu, Yunyou and Jing, Haodong and Wu, Yueyi and Wu, Xian and Zheng, Yefeng},
+  booktitle={European Conference on Computer Vision},
+  pages={305--325},
+  year={2026},
+  organization={Springer}
+}
+```
